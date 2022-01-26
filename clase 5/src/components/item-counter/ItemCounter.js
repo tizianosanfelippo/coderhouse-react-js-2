@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
+
 
 const ItemCounter = ({ stock }) => {
   const [counter, setCounter] = useState(0);
   const [currentTimes, setCurrentTimes] = useState(0);
-<ItemCounter stock={4} />
 
 
 
@@ -12,8 +13,8 @@ const ItemCounter = ({ stock }) => {
     setCounter(counter - 1);
   };
 
-   const plusCounter = () => {
-    if (counter < stock) return;
+  const plusCounter = () => {
+    if (counter < stock)
     { setCounter(counter+1) };
    };
 
@@ -29,11 +30,13 @@ const ItemCounter = ({ stock }) => {
     <>
       <div>
         <h3>Has agregado {currentTimes} elementos</h3>
-        <button onClick={minusCounter}>-</button>
-        <span>{counter}</span>
-        <button onClick={plusCounter}>+</button>
+        <Button variant="primary" onClick={minusCounter}>-</Button>
+        <span> {counter} </span>
+        <Button variant="primary" onClick={plusCounter}>+</Button>
+
       </div>
-      <button onClick={takeMe}>Agregar al carrito</button>
+      
+      <Button style={{marginTop:10,marginBottom:10}} variant="primary" onClick={takeMe}>Agregar al carrito</Button>
     </>
   );
 };

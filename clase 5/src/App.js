@@ -6,13 +6,13 @@ import ItemCounter from "./components/item-counter/ItemCounter";
 
 
 
+
 function App() {
   return (
     <div className="App">
       <NavBar />
       <ItemListContainer />
-      <ItemCounter />
-
+      <ItemCounter stock={4}/>
     </div>
   );
 }
