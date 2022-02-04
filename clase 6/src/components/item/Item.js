@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ItemCounter from "../item-counterclase6/ItemCounter";
+import ItemCounter from "../item-counter/ItemCounter";
 
 const Item = ({item, setSelectedItem}) => {
   const [sotckSelected, setSotckSelected] = useState(0);

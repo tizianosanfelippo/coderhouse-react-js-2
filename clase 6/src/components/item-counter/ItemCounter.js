@@ -36,7 +36,7 @@ const ItemCounter = ({ stock }) => {
 
       </div>
       
-      <Button style={{marginTop:10,marginBottom:10}} variant="primary" onClick={takeMe}>Agregar al carrito</Button>
+      {/* <Button style={{marginTop:10,marginBottom:10}} variant="primary" onClick={takeMe}>Agregar al carrito</Button> */}
     </>
   );
 };
