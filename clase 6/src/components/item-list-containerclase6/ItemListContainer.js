@@ -78,7 +78,7 @@ const ItemListContainer = () => {
       <p>ID: {selectedItem && selectedItem.id}</p>
       <p>STOCK seleccionado: {selectedItem && selectedItem.stock}</p>
       <hr />
-      <ItemList products={products} />
+      <ItemList products={products} setSelectedItem={setSelectedItem} />
     </div>
   );
 };
